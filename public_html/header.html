@@ -1,0 +1,37 @@
+<!-- Header will be imported via jQuery Request-->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light">
+  <!-- This is took me a while to figure out why the navbar automatically shows and collapses depending on the screen size-->
+  <!-- navbar-expand-* will tell bootstrap when it should show extended nav. In this case, at md size.--->
+  <div class="container-fluid">
+    <a class="navbar-brand " href="index.html">First-Gen College Acess <i class="fa fa-pencil m-2"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <!-- collapse will cause the target item to be hidden -->
+      <!-- data-target tells bootstrap what we want to hide/collapse when we hit the button, in this case, #navbarResponsive -->
+      <span class="navbar-toggler-icon"></span>
+      <!--adds the hambuger icon in the top right corner on mobile screens. This is provided by Bootstrap -->
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <!-- ml auto will move the ul items to the right when at full width. -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="common-app.html">Common App</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fafsa.html">FAFSA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="act_sat.html">ACT & SAT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="college-terminology.html">Terminology</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="calendar.html">Events Calendar</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

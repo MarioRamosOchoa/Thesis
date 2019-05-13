@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 26px;
+  color: black;
+}
+
+#calendar {
+  margin: 40px auto;
+  padding: 40px;
+}
+
+.navbar {
+  padding: .5rem;
+  position: fixed;
+  width: 98%;
+  top: 0;
+  margin: 1rem;
+  transition-duration: .65s;
+  background-color: rgba(255, 255, 255, 0.0);
+  font-size: 20px;
+}
+
+.navbar-nav li {
+  padding-right: 30px;
+}
+
+/* The specificity of your custom css rule must either match or exceed the specificity of the corresponding Bootstrap rule. This means we need to be more as or more specific than the Bootstrap rule in order for the style to take place. */
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: orange;
+}

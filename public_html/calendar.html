@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="cal_style.css">
+  <link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
+  <link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+  <link href='fullcalendar/packages/timegrid/main.css' rel='stylesheet' />
+  <link href='fullcalendar/packages/bootstrap/main.css' rel='stylesheet' />
+  <link href='fullcalendar/packages/list/main.css' rel='stylesheet' />
+
+  <link rel="stylesheet" href="fullcalendar/packages/moment.js">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar-scheduler/1.9.4/scheduler.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar-scheduler/1.9.4/scheduler.js">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src='//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
+
+  <script src='fullcalendar/packages/core/main.js'></script>
+  <script src='fullcalendar/packages/daygrid/main.js'></script>
+  <script src='fullcalendar/packages/interaction/main.js'></script>
+  <script src='fullcalendar/packages/timegrid/main.js'></script>
+  <script src='fullcalendar/packages/bootstrap/main.js'></script>
+  <script src='fullcalendar/packages/list/main.js'></script>
+
+  <script src="cal_script.js">
+  </script>
+
+  <script>
+		$(function() {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
+
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <!-- Modal Needed for Popups-->
+  <div id="calendarModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 id="modalTitle" class="modal-title"></h2>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <h4 id="modalBody"></h4>
+        </div>
+
+        <!-- Modal Footer-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id='calendar'></div>
+
+</body>
+
+</html>
